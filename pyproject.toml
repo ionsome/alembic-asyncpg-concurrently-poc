@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "alembic-asyncpg-concurrently-poc"
+version = "0.1.0"
+description = ""
+authors = ["Max Adrian"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = {version = ">=1.4.0,<3.0", extras = ["postgresql_asyncpg", "postgresql", "mypy"]}
+alembic = {version = ">=1.8.0,<2.0", extras = ["tz"]}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
